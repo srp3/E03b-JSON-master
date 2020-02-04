@@ -30,7 +30,7 @@
 			"exit": "EAST",
 			"target": "EHOUS"
 		}, {
-			"exit": "NORTH",
+			"exit": "SOUTH",
 			"target": "FORE3"
 		}],
 		"items": []
@@ -159,7 +159,7 @@
 		"name": "Forest",
 		"desc": "This is a dimly lit forest, with large trees all around.  One\nparticularly large tree with some low branches stands here.",
 		"exits": [{
-			"exit": "UP",
+			"exit": "DOWN",
 			"target": "TREE"
 		}, {
 			"exit": "NORTH",
@@ -529,7 +529,7 @@
 	},
 	"MGRAT": {
 		"name": "Grating Room",
-		"desc": "",
+		"desc": "If you stay here much longer, you will be eaten by a Grue",
 		"exits": [{
 			"exit": "SW",
 			"target": "MAZ11"
@@ -790,6 +790,11 @@
 			"target": "CRAW1"
 		}],
 		"items": []
+			{ 
+				"item": "MUMMY" ,
+				"desc": "An ancient Egyptian mummy is sprawled on the floor",
+				"take": "You stuff the mummy into your sack"
+			}
 	},
 	"ICY": {
 		"name": "Glacier Room",
@@ -887,6 +892,9 @@
 		}, {
 			"exit": "EAST",
 			"target": "CAVE2"
+		}, {}
+			"exit": "NORTH",
+			"target": "MIRR1"
 		}],
 		"items": []
 	},
@@ -1072,7 +1080,7 @@
 	},
 	"DEAD7": {
 		"name": "Dead End",
-		"desc": "Dead End",
+		"desc": "you have reached a Dead End",
 		"exits": [{
 			"exit": "SOUTH",
 			"target": "BLADD"
@@ -1117,7 +1125,7 @@
 	},
 	"BATS": {
 		"name": "Bat Room",
-		"desc": "",
+		"desc": "This is a Cave full of bats. They are currently sleeping",
 		"exits": [{
 			"exit": "EAST",
 			"target": "SQUEE"
@@ -1244,6 +1252,10 @@
 		}, {
 			"exit": "SOUTH",
 			"target": "MINE6"
+			{
+			"item": "Sign",
+			"desc": "A sign is here that points down"
+			}
 		}],
 		"items": []
 	},
@@ -1681,7 +1693,7 @@
 	},
 	"FCHMP": {
 		"name": "Moby lossage",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
@@ -2063,6 +2075,10 @@
 		}, {
 			"exit": "SOUTH",
 			"target": "GALLE"
+			{
+				"exit": "ROB" ,
+				"target": "BKVAU"
+			}
 		}],
 		"items": []
 	},
@@ -2178,7 +2194,7 @@
 		"items": []
 	},
 	"CP": {
-		"name": "Room in a Puzzle",
+		"name": "Just a room(not suspicious at all)",
 		"desc": "",
 		"exits": [{
 			"exit": "NORTH",
@@ -2434,25 +2450,25 @@
 	},
 	"MRDE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRDW": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRGE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRGW": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
@@ -2791,7 +2807,7 @@
 	},
 	"PCELL": {
 		"name": "Prison Cell",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
